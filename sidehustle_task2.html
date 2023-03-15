@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Simple Form </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            function success() {
+                success("Form Submission successful")
+            }
+        </script>
+        <style>
+            h1{
+                color: rgb(255, 174, 0);
+                margin: 0px;
+                padding: 64px;
+                text-align: center;
+                font-size: 90px;
+                font-weight: 100;
+                background-color:lightgray;
+                border-top-right-radius: 100px;
+            }
+        </style>
+        <h1>Sign up form</h1>
+        <form method="*" onsubmit="success()">
+            <fieldset class="fieldset2">
+                <fieldset id="fieldset3">
+                    <p>Fill in your correct details below</p>
+                    <fieldset>
+                        <legend>Fullname</legend>
+                        <label for="first name">First name</label>
+                        <input type="text" name="first name" id="first name" required>
+                        <label for="lastname">Last name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email Address</legend>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Phone number</legend>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select gender</legend>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="male" value="male"  required style="height: fit-content;">
+                        <label for="female">Female</label>
+                        <input type="radio" name="sex" id="female" value="female"required style="height: fit-content;">
+                    </fieldset>   
+                    <fieldset>
+                        <legend>Input password</legend>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="Password" required >
+                    </fieldset>
+                    <fieldset>
+                        <legend>Confirm password </legend>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required >
+                        <input class="submit" type="submit" value="Submit">
+                    </fieldset>
+                </fieldset>
+            </fieldset>
+
+            
+               
+            
+        </form>
+    </body>
+
+</html>

@@ -1,0 +1,45 @@
+fieldset{
+    outline: transparent;
+    border: transparent;
+    padding: 32px;
+    background-color: whitesmoke;
+    border-bottom-left-radius:100px;
+    margin: 0px;
+}
+input{
+    border-radius: 5px;
+    border-style:solid;
+    height: 25px;
+}
+.submit{
+    background-color:rgb(255, 174, 0);
+    font-weight: 900;
+    float: right;
+    border-color:rgb(255, 174, 0);
+}
+legend{
+    font-weight: 900;
+    font-size:medium;
+    color: blue;
+}
+label{
+    font-size:small;
+    font-weight: 600;
+    color: rgb(255, 174, 0);
+}
+body{
+   margin: 0px;
+}
+.fieldset2{
+    background-color: rgb(255, 174, 0);
+    margin: 0px;
+}
+#fieldset3{
+    border-top-right-radius: 100px;
+    
+}
+p{
+    font-size:32px;
+    text-align: center;
+    font-weight: 800;
+}
