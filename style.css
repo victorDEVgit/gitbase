@@ -3,19 +3,19 @@ fieldset{
     border: transparent;
     padding: 32px;
     background-color: whitesmoke;
-    border-bottom-left-radius:100px;
     margin: 0px;
 }
 input{
-    border-radius: 5px;
+    border-radius: 0px;
     border-style:solid;
-    height: 25px;
+    height: 50px;
+    width: 450px;
 }
 .submit{
-    background-color:rgb(255, 174, 0);
+    background-color: orange;
     font-weight: 900;
     float: right;
-    border-color:rgb(255, 174, 0);
+    border: none;
 }
 legend{
     font-weight: 900;
@@ -25,13 +25,16 @@ legend{
 label{
     font-size:small;
     font-weight: 600;
-    color: rgb(255, 174, 0);
+    color: orange;
 }
 body{
    margin: 0px;
 }
 .fieldset2{
-    background-color: rgb(255, 174, 0);
+    background-image: url(https://www.allbusiness.com/asset/2016/02/hands-typing-on-laptop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% ;
     margin: 0px;
 }
 #fieldset3{
@@ -42,4 +45,12 @@ p{
     font-size:32px;
     text-align: center;
     font-weight: 800;
+}
+@media screen and(max-width: 600px) {
+    .submit{
+        width: 450px;
+        position: absolute;
+        left: 50%;
+    }
+
 }

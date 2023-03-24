@@ -3,6 +3,7 @@
     <head>
         <title>A Simple Form </title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <script>
@@ -12,55 +13,51 @@
         </script>
         <style>
             h1{
-                color: rgb(255, 174, 0);
+                color: orange;
                 margin: 0px;
                 padding: 64px;
+                padding-right: 89px;
                 text-align: center;
                 font-size: 90px;
                 font-weight: 100;
                 background-color:lightgray;
+                background-attachment: fixed;
                 border-top-right-radius: 100px;
             }
         </style>
         <h1>Sign up form</h1>
-        <form method="*" onsubmit="success()">
+        <form onsubmit="success()">
             <fieldset class="fieldset2">
                 <fieldset id="fieldset3">
                     <p>Fill in your correct details below</p>
                     <fieldset>
                         <legend>Fullname</legend>
-                        <label for="first name">First name</label>
-                        <input type="text" name="first name" id="first name" required>
-                        <label for="lastname">Last name</label>
-                        <input type="text" name="lastname" id="lastname" required>
+                        <input type="text" name="first name" id="first name" placeholder="Enter Firstname" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter Lastname" required>
                     </fieldset>
                     <fieldset>
                         <legend>Email Address</legend>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address"required>
                     </fieldset>
                     <fieldset>
                         <legend>Phone number</legend>
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone" required>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
                     </fieldset>
                     <fieldset>
                         <legend>Select gender</legend>
                         <label for="male">Male</label>
-                        <input type="radio" name="sex" id="male" value="male"  required style="height: fit-content;">
+                        <input type="radio" name="sex" id="male" value="male"  required style="height: fit-content;width: fit-content;">
                         <label for="female">Female</label>
-                        <input type="radio" name="sex" id="female" value="female"required style="height: fit-content;">
+                        <input type="radio" name="sex" id="female" value="female"required style="height: fit-content;width: fit-content;">
                     </fieldset>   
                     <fieldset>
                         <legend>Input password</legend>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="Password" required >
+                        <input type="password" name="password" id="Password" placeholder="Enter password" value="" required >
                     </fieldset>
                     <fieldset>
                         <legend>Confirm password </legend>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required >
-                        <input class="submit" type="submit" value="Submit">
+                        <input type="password" name="cfpassword" id="cfpassword" placeholder="Confirm password" value=""  required >
+                        <input class="submit" type="submit" value="Submit" onsubmit="success()" style="width: 200x;margin-top: 90px;align-self:center;margin-right: 50px;width: 90px;cursor: pointer;">
                     </fieldset>
                 </fieldset>
             </fieldset>
