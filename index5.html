@@ -1,94 +1,71 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>startup</title>
+        <title>A Simple Form </title>
+        <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            body{
-                background-image: url(https://www.allbusiness.com/asset/2016/02/hands-typing-on-laptop.jpg);
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: 100% ;
-                margin: 0px;
-
-            }
-            h1{
-                font-size: 40px;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: 800;
-                color: black;
-                position: absolute;
-                top: -20px;
-                left: 16px;
-                
-            }
-            em{
-                color: orange;
-            }
-            .button{
-                color: black;
-                padding: 13px 9px;
-                border: none;
-                cursor:pointer;
-                position: fixed;
-                left: 70%;
-                background-color: transparent;
-                transition-duration: 0.4s;
-                font-weight: 700;
-                top: 20px;
-                
-            }
-            .button:hover{
-                background-color: orange;
-                color:white
-            }
-            h2{
-                position: absolute;
-                top:350px ;
-                left: 20px;
-            }
-            .button2{
-                position: absolute;
-                left: 70%;
-                top: 380px;
-                border: none;
-                background-color: orange;
-                padding: 10px ;
-                font-weight: 900;
-                font-size: large;
-                color: white;
-                border-radius: 10px;
-                width: 100px;
-                cursor: pointer;
-            }
-            p{
-                position:absolute;
-                top: 90% ;
-                right: 50%;
-                text-align: center;
-                color: white;
-            }
-            .group1{
-                background-color: whitesmoke;
-                padding: 40px;
-                align-content: center;
-                position:fixed;
-                padding-left: 100%;
-            }
-        </style>
     </head>
     <body>
-        <h1 style="position: absolute;top: 300px;font-weight: 600;font-size: xx-large;left: 100px;color: orange;">We are good at what we do</h1>
-        <h2>Banking without limits,make local and international transactions <br>within seconds. 24 hours customer service</h2>
-        <button onclick="window.location.href='sidehustle_task2.html';" class="button2">Sign up</button>
-        <p>Already have an account ?</p>
-        <a href="index.html"  style=" position: absolute; left: 50%;width: 50px; padding-left: 5px; top: 92.3%;color: blue;text-decoration: underline;">Log in</a>
+        <script>
+            function success() {
+                alert("Form Submission successful")
+            }
+        </script>
+        <style>
+            h1{
+                color: orange;
+                margin: 0px;
+                padding: 64px;
+                padding-right: 89px;
+                text-align: center;
+                font-size: 90px;
+                font-weight: 100;
+                background-color:lightgray;
+                background-attachment: fixed;
+                border-top-right-radius: 100px;
+            }
+        </style>
+        <h1>Sign up form</h1>
+        <form onsubmit="success()">
+            <fieldset class="fieldset2">
+                <fieldset id="fieldset3">
+                    <p>Fill in your correct details below</p>
+                    <fieldset>
+                        <legend>Fullname</legend>
+                        <input type="text" name="first name" id="first name" placeholder="Enter Firstname" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter Lastname" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email Address</legend>
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address"required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Phone number</legend>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter phone number" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Select gender</legend>
+                        <label for="male">Male</label>
+                        <input type="radio" name="sex" id="male" value="male"  required style="height: fit-content;width: fit-content;">
+                        <label for="female">Female</label>
+                        <input type="radio" name="sex" id="female" value="female"required style="height: fit-content;width: fit-content;">
+                    </fieldset>   
+                    <fieldset>
+                        <legend>Input password</legend>
+                        <input type="password" name="password" id="Password" placeholder="Enter password" value="" required >
+                    </fieldset>
+                    <fieldset>
+                        <legend>Confirm password </legend>
+                        <input type="password" name="cfpassword" id="cfpassword" placeholder="Confirm password" value=""  required >
+                        <input class="submit" type="submit" value="Submit" onsubmit="success()" style="width: 200x;margin-top: 90px;align-self:center;margin-right: 50px;width: 90px;cursor: pointer;">
+                    </fieldset>
+                </fieldset>
+            </fieldset>
+
+            
+               
+            
+        </form>
     </body>
-    <section class="group1">  
-        <h1>Ori<em>pay</em></h1>
-        <button class="button">OUR SERVICES</button>  
-        <button class="button" style="left: 81%;">ABOUT US</button>  
-        <button class="button" style="left:90%">CONTACT US</button>
-    </section>
-    <footer style="position:absolute;bottom:-60%;left: 0%;right:0%;text-align: center; padding: 30vh;background-color: orange;color: white;font-size: 30px;">&copy; Copyright Victor 2023 </footer>
+
 </html>
