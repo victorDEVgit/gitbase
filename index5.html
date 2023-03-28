@@ -11,20 +11,6 @@
                 alert("Form Submission successful")
             }
         </script>
-        <style>
-            h1{
-                color: orange;
-                margin: 0px;
-                padding: 64px;
-                padding-right: 89px;
-                text-align: center;
-                font-size: 90px;
-                font-weight: 100;
-                background-color:lightgray;
-                background-attachment: fixed;
-                border-top-right-radius: 100px;
-            }
-        </style>
         <h1>Sign up form</h1>
         <form onsubmit="success()">
             <fieldset class="fieldset2">
@@ -57,8 +43,8 @@
                     <fieldset>
                         <legend>Confirm password </legend>
                         <input type="password" name="cfpassword" id="cfpassword" placeholder="Confirm password" value=""  required >
-                        <input class="submit" type="submit" value="Submit" onsubmit="success()" style="width: 200x;margin-top: 90px;align-self:center;margin-right: 50px;width: 90px;cursor: pointer;">
                     </fieldset>
+                    <input class="submit" type="submit" value="Submit" onsubmit="success()">
                 </fieldset>
             </fieldset>
 

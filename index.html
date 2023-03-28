@@ -25,20 +25,19 @@
             em{
                 color: orange;
             }
-            .button{
+            button{
                 color: black;
                 padding: 13px 9px;
                 border: none;
                 cursor:pointer;
                 position: fixed;
-                left: 70%;
                 background-color: transparent;
                 transition-duration: 0.4s;
                 font-weight: 700;
                 top: 20px;
                 
             }
-            .button:hover{
+            button:hover{
                 background-color: orange;
                 color:white
             }
@@ -70,25 +69,147 @@
             }
             .group1{
                 background-color: whitesmoke;
-                padding: 40px;
                 align-content: center;
                 position:fixed;
-                padding-left: 100%;
+                padding-left: 0%;
+                width: 100%;
+                height: 80px ;
+            }
+            .button4{
+                left: 81%;
+            }
+            .button3{
+                left: 90%;
+            }
+            .button1{
+                left: 70%;
+            }
+            .h1{
+                position: absolute;
+                top: 300px;
+                font-weight: 600;
+                font-size: xx-large;
+                left: 100px;
+                color: orange;
+            }
+            a{ position: absolute;
+                 left: 50%;
+                 width: 50px;
+                padding-left: 5px; 
+                top: 92.3%;
+                color: blue;
+                text-decoration: underline;
+
+            }
+            footer{
+                position:absolute;
+                bottom:-60%;
+                left: 0%;
+                right:0%;
+                text-align: center; 
+                padding: 30vh;
+                background-color: orange;
+                color: white;
+                font-size: 30px;
+
+            }
+            @media screen and (max-width:500px){
+                body{
+                    background-image: url(https://th.bing.com/th/id/OIP.SixGaFy7huve0cySTKjW7wHaE7?pid=ImgDet&rs=1);
+                    background-size: 200% 100%;
+                    background-attachment:fixed;
+                    object-fit: contain;
+                    width: 100vw;
+                }
+                .button1{
+                    position: absolute;
+                    left: 40%;
+                    width: 20vw;
+                    font-size: x-small;
+                }
+                .button4{
+                    position:absolute;
+                    left: 62%;
+                    width: 17vw;
+                    font-size: x-small;
+                    text-align: center;  
+                }
+                .button3{
+                    position: absolute;
+                    left:80%;
+                    width:20vw;
+                    font-size: x-small;
+                }
+                h1{font-size: xx-large;
+                    padding-top: 1vh;
+                    left: 2vw;
+                }
+                .group1{
+                    width: 100vw;
+                    position: fixed;
+                    padding-right: 0%;
+                    right: 0%;
+                    overflow: hidden;
+                }
+                .h1{
+                    font-size:x-large;
+                    text-align:left;
+                    right: 10%;
+                    left: 0%;
+                    width:50vw;
+                    top: 30%;
+                    padding-left: 2vw;
+                    font-size: large;
+                }
+                h2{
+                    font-size: large;
+                    text-align: right;
+                    top: 40%;
+                    color: white;
+                    right: 1vw;
+                }
+                .button2{
+                    position: absolute;
+                    top: 60%;
+                    font-size: medium;
+                    width: 90px;
+                    height: 50px;
+                }
+                p{
+                    top:75%;
+                    font-size: small;
+                    color:white;
+                    margin: 0%;
+                    right: 35vw;
+                }
+                a{
+                    top: 75%;
+                    font-size: small;
+                    left: 65vw;
+                }
+                footer{
+                    font-size: small;
+                    width: 100vw;
+                    padding: 0%;
+                    padding-top: 25vh;
+                    padding-bottom: 25vh;
+                }
+
             }
         </style>
     </head>
     <body>
-        <h1 style="position: absolute;top: 300px;font-weight: 600;font-size: xx-large;left: 100px;color: orange;">We are good at what we do</h1>
+        <h1 class="h1" >We are good at what we do</h1>
         <h2>Banking without limits,make local and international transactions <br>within seconds. 24 hours customer service</h2>
         <button onclick="window.location.href='index5.html';" class="button2">Sign up</button>
         <p>Already have an account ?</p>
-        <a style=" position: absolute; left: 50%;width: 50px; padding-left: 5px; top: 92.3%;color: blue;text-decoration: underline;">Log in</a>
+        <a>Log in</a>
     </body>
     <section class="group1">  
         <h1>Ori<em>pay</em></h1>
-        <button class="button">OUR SERVICES</button>  
-        <button class="button" style="left: 81%;">ABOUT US</button>  
-        <button class="button" style="left:90%">CONTACT US</button>
+        <button class="button1">OUR SERVICES</button>  
+        <button class="button4">ABOUT US</button>  
+        <button class="button3">CONTACT US</button>
     </section>
-    <footer style="position:absolute;bottom:-60%;left: 0%;right:0%;text-align: center; padding: 30vh;background-color: orange;color: white;font-size: 30px;">&copy; Copyright Victor 2023 </footer>
+    <footer>&copy; Copyright Victor 2023 </footer>
 </html>
