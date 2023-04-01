@@ -97,5 +97,8 @@ h1{
     #fieldset3{
         border-top-right-radius: 0%;
     }
+    #p{
+        color: red;
+    }
 
 }

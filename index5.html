@@ -6,16 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <script>
-            function success() {
-                alert("Form Submission successful")
-            }
-        </script>
         <h1>Sign up form</h1>
         <form onsubmit="success()">
             <fieldset class="fieldset2">
                 <fieldset id="fieldset3">
-                    <p>Fill in your correct details below</p>
+                    <p id="P">Fill in your correct details below</p>
                     <fieldset>
                         <legend>Fullname</legend>
                         <input type="text" name="first name" id="first name" placeholder="Enter Firstname" required>
@@ -42,16 +37,18 @@
                     </fieldset>
                     <fieldset>
                         <legend>Confirm password </legend>
-                        <input type="password" name="cfpassword" id="cfpassword" placeholder="Confirm password" value=""  required >
+                        <input type="password" name="cfpassword" id="cfpassword" placeholder="Confirm password" value="" required >
                     </fieldset>
-                    <input class="submit" type="submit" value="Submit" onsubmit="success()">
+                    <input class="submit" type="submit" value="Submit" >
                 </fieldset>
             </fieldset>
-
-            
-               
-            
         </form>
+        <script type="application/javascript">
+            function success() {
+                alert("Form Submission successful")
+            }
+
+        </script>
     </body>
 
 </html>
